@@ -1,0 +1,8 @@
+RewriteBase /
+RewriteEngine On
+#RewriteBase /files/news/index.php/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule /files/news/^(.+)$ http://localhost/files/news/index.php/$1 [L,QSA]
+RewriteRule ^index.php/(.+)$ index.php?q=$1 [L,QSA]
+#RewriteRule (.*) index.php?q=$1 [L]
+
